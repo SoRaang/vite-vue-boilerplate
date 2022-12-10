@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: 'SUIT Variable';
+    src:
+        local('SUIT Variable'),
+        url('/src/assets/fonts/SUIT-Variable.woff2') format('woff2-variations');
+	font-weight: 100 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+:root {
+    height: 100%;
+    font-family: 'SUIT Variable', sans-serif;
+    font-size: 20px;
+    overflow: hidden;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font: inherit;
+}
+
+body {
+    height: 100%;
+    background-color: rgb(6, 27, 34);
+    color: rgb(var(--default-text-color, 238, 238, 238));
+    font-size: .8rem;
+}
+
+#app {
+    height: 100%;
+}
+
+#wrap {
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: overlay;
+}
