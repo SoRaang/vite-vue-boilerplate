@@ -2,6 +2,7 @@
     <main id="contentView">
         <div class="container mx-auto my-4">
             <swiper
+                :modules="modules"
                 :slides-per-view="3"
                 :space-between="15"
                 navigation
@@ -44,10 +45,10 @@
 <script setup>
     import { Navigation, Pagination, Scrollbar, A11y } from 'swiper'
     import { Swiper, SwiperSlide } from 'swiper/vue'
-    import 'swiper/css'
-    import 'swiper/css/navigation'
-    import 'swiper/css/pagination'
-    import 'swiper/css/scrollbar'
+    import 'swiper/scss'
+    import 'swiper/scss/navigation'
+    import 'swiper/scss/pagination'
+    import 'swiper/scss/scrollbar'
 
     /* Logic Ends */
 </script>
