@@ -4,6 +4,8 @@
             <swiper
                 :slides-per-view="3"
                 :space-between="15"
+                navigation
+                :pagination="{ clickable: true }"
                 @swiper="onSwiper"
                 @slideChange="onSlideChange"
             >
@@ -40,8 +42,12 @@
 </template>
 
 <script setup>
+    import { Navigation, Pagination, Scrollbar, A11y } from 'swiper'
     import { Swiper, SwiperSlide } from 'swiper/vue'
     import 'swiper/css'
+    import 'swiper/css/navigation'
+    import 'swiper/css/pagination'
+    import 'swiper/css/scrollbar'
 
     /* Logic Ends */
 </script>
