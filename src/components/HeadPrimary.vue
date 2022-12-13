@@ -2,7 +2,7 @@
     <header id="headPrimary" class="flex justify-center h-16 bg-white/[.05]">
         <div class="container">
             <h1 id="mainLogo">
-                <a href="#">이것은 헤더 메롱</a>
+                <a href="#">Devoist</a>
             </h1>
         </div>
     </header>
