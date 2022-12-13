@@ -4,12 +4,14 @@
             <span class="text-[.6rem] opacity-50">© 2022 SoRaang</span>
         </div>
     </footer>
+
+    <!-- Template Ends -->
 </template>
 
 <script setup>
-
+    /* Logic Ends */
 </script>
 
 <style lang="scss" scoped>
-
+    // Stylesheet Ends
 </style>
