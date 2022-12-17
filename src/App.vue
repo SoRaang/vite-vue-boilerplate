@@ -1,17 +1,21 @@
 <template>
     <div id="wrap" class="flex flex-col">
-        <Header></Header>
+        <HeadPrimary></HeadPrimary>
         <Main></Main>
-        <Footer></Footer>
+        <FootPrimary></FootPrimary>
     </div>
+
+    <!-- Template Ends -->
 </template>
 
 <script setup>
-    import Header from './components/Header.vue'
+    import HeadPrimary from './components/HeadPrimary.vue'
+    import FootPrimary from './components/FootPrimary.vue'
     import Main from './components/Main.vue'
-    import Footer from './components/Footer.vue'
+
+    /* Logic Ends */
 </script>
 
 <style lang="scss" scoped>
-
+    // Stylesheet Ends
 </style>
