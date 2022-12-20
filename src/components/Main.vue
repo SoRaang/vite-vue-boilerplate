@@ -36,6 +36,8 @@
                     </div>
                 </swiper-slide>
             </swiper>
+
+            <router-view></router-view>
         </div>
     </main>
 
