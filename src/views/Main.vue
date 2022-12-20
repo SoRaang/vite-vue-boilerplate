@@ -38,7 +38,7 @@
 
         <section id="mainNewArticles">
             <article class="new-article-item">
-                최근 게시물
+                <h1>최근 게시물</h1>
             </article>
         </section>
     </div>

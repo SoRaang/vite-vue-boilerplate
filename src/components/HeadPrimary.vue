@@ -43,5 +43,9 @@
         @apply active:bg-blue-300/[.5];
     }
 
+    .nav-item:has(.router-link-active) {
+        @apply bg-emerald-500;
+    }
+
     // Stylesheet Ends
 </style>
