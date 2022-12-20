@@ -1,45 +1,37 @@
 <template>
-    <main id="contentView">
-        <div class="container mx-auto my-4">
-            <swiper
-                :modules="modules"
-                :slides-per-view="3"
-                :space-between="15"
-                navigation
-                :pagination="{ clickable: true }"
-                @swiper="onSwiper"
-                @slideChange="onSlideChange"
-            >
-                <swiper-slide>
-                    <div class="slide-item">
-                        Slide 1
-                    </div>
-                </swiper-slide>
-                <swiper-slide>
-                    <div class="slide-item">
-                        Slide 2
-                    </div>
-                </swiper-slide>
-                <swiper-slide>
-                    <div class="slide-item">
-                        Slide 3
-                    </div>
-                </swiper-slide>
-                <swiper-slide>
-                    <div class="slide-item">
-                        Slide 4
-                    </div>
-                </swiper-slide>
-                <swiper-slide>
-                    <div class="slide-item">
-                        Slide 5
-                    </div>
-                </swiper-slide>
-            </swiper>
-
-            <router-view></router-view>
-        </div>
-    </main>
+    <swiper
+        :modules="modules"
+        :slides-per-view="3"
+        :space-between="15"
+        @swiper="onSwiper"
+        @slideChange="onSlideChange"
+    >
+        <swiper-slide>
+            <div class="slide-item">
+                Slide 1
+            </div>
+        </swiper-slide>
+        <swiper-slide>
+            <div class="slide-item">
+                Slide 2
+            </div>
+        </swiper-slide>
+        <swiper-slide>
+            <div class="slide-item">
+                Slide 3
+            </div>
+        </swiper-slide>
+        <swiper-slide>
+            <div class="slide-item">
+                Slide 4
+            </div>
+        </swiper-slide>
+        <swiper-slide>
+            <div class="slide-item">
+                Slide 5
+            </div>
+        </swiper-slide>
+    </swiper>
 
     <!-- Template Ends -->
 </template>

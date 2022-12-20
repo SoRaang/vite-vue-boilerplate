@@ -1,7 +1,13 @@
 <template>
     <div id="wrap" class="flex flex-col">
         <HeadPrimary></HeadPrimary>
-        <Main></Main>
+
+        <main id="contentView">
+            <div class="container mx-auto my-4">
+                <router-view></router-view>
+            </div>
+        </main>
+
         <FootPrimary></FootPrimary>
     </div>
 
@@ -11,7 +17,6 @@
 <script setup>
     import HeadPrimary from './components/HeadPrimary.vue'
     import FootPrimary from './components/FootPrimary.vue'
-    import Main from './components/Main.vue'
 
     /* Logic Ends */
 </script>

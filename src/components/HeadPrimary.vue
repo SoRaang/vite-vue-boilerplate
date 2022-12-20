@@ -2,7 +2,7 @@
     <header id="headPrimary" class="flex justify-center items-center sticky top-0 h-16 bg-white/[.05] backdrop-blur-lg">
         <div class="container flex justify-between items-center">
             <h1 id="mainLogo" class="hover:text-emerald-500">
-                <a href="#">Devoist</a>
+                <router-link to="/">Devoist</router-link>
             </h1>
 
             <nav id="navPrimary" class="flex items-center gap-2">
