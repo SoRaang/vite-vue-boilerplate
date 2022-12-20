@@ -1,6 +1,6 @@
 <template>
-    <header id="headPrimary" class="flex justify-center items-center sticky top-0 h-16 bg-white/[.05] backdrop-blur-lg">
-        <div class="container flex justify-between items-center">
+    <header id="headPrimary">
+        <div class="container flex justify-between items-center px-2">
             <h1 id="mainLogo" class="hover:text-emerald-500">
                 <router-link to="/">Devoist</router-link>
             </h1>
@@ -33,7 +33,7 @@
     }
 
     #headPrimary {
-
+        @apply flex justify-center items-center sticky top-0 h-16 bg-white/[.05] backdrop-blur-lg;
     }
 
     .nav-item {

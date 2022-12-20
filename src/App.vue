@@ -3,7 +3,7 @@
         <HeadPrimary></HeadPrimary>
 
         <main id="contentView">
-            <div class="container mx-auto my-4">
+            <div class="container mx-auto my-4 px-2">
                 <router-view></router-view>
             </div>
         </main>

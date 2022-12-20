@@ -12,15 +12,12 @@ const app = createApp(App)
 /* 라우터 셋팅 */
 
 import Main from './components/Main.vue'
-import Projects from './components/Projects.vue'
-import Workflow from './components/Workflow.vue'
-import Storage from './components/Storage.vue'
 
 const routes = [
     { path: '/', component: Main },
-    { path: '/projects', component: Projects },
-    { path: '/workflow', component: Workflow },
-    { path: '/storage', component: Storage },
+    { path: '/projects', component: () => import('./components/Projects.vue') },
+    { path: '/workflow', component: () => import('./components/Workflow.vue') },
+    { path: '/storage', component: () => import('./components/Storage.vue') },
 ]
 
 const router = createRouter({
