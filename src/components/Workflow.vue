@@ -1,6 +1,6 @@
 <template>
     <div>
-        <h1>Workflow</h1>
+        <h1>개인별 업무일정표</h1>
     </div>
 
     <!-- Template Ends -->

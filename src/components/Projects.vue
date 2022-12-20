@@ -1,6 +1,6 @@
 <template>
     <div>
-        <h1>Projects</h1>
+        <h1>프로젝트별 일정</h1>
     </div>
 
     <!-- Template Ends -->

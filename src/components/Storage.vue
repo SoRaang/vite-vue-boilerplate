@@ -1,6 +1,6 @@
 <template>
     <div>
-        Storage
+        <h1>자료실</h1>
     </div>
 
     <!-- Template Ends -->
