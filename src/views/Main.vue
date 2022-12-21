@@ -2,11 +2,11 @@
     <div id="mainPage" class="flex flex-col gap-4">
         <section id="mainFeaturedSlider">
             <swiper
-            :modules="modules"
-            :slides-per-view="3"
-            :space-between="15"
-            @swiper="onSwiper"
-            @slideChange="onSlideChange"
+                :modules="modules"
+                :slides-per-view="3"
+                :space-between="15"
+                @swiper="onSwiper"
+                @slideChange="onSlideChange"
             >
                 <swiper-slide>
                     <div class="slide-item">
@@ -39,6 +39,8 @@
         <section id="mainNewArticles">
             <article class="new-article-item">
                 <h1>최근 게시물</h1>
+
+                <img src="/src/assets/images/img.gif" alt="">
             </article>
         </section>
     </div>

@@ -3,7 +3,7 @@
 @tailwind utilities;
 @font-face {
   font-family: "SUIT Variable";
-  src: local("SUIT Variable"), url("/src/assets/fonts/SUIT-Variable.woff2") format("woff2-variations");
+  src: local("SUIT Variable"), url("@/assets/fonts/SUIT-Variable.woff2") format("woff2-variations");
   font-weight: 100 900;
   font-style: normal;
   font-display: swap;
@@ -26,7 +26,7 @@
 
 body {
   height: 100%;
-  background-color: rgb(6, 27, 34);
+  background-color: rgb(var(--default-background-color, 6, 27, 34));
   color: rgb(var(--default-text-color, 238, 238, 238));
   font-size: 0.8rem;
 }
