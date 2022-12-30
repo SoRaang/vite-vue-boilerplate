@@ -11,6 +11,7 @@
     "dependencies": {
         "autoprefixer": "^10.4.13",
         "axios": "^1.2.1",
+        "date-fns": "^2.29.3",
         "pinia": "^2.0.28",
         "postcss": "^8.4.20",
         "sass": "^1.56.2",
