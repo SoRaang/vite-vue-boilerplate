@@ -28,7 +28,7 @@
 
 <style lang="scss" scoped>
     #mainLogo {
-        font-family: 'Fredericka the Great', cursive;
+        font-family: 'Aladin', cursive;
         font-size: 1.8rem;
     }
 
@@ -37,7 +37,7 @@
     }
 
     .nav-item {
-        @apply px-3 py-1 rounded bg-white/[.05] shadow-lg text-[.6rem]; // Tailwind CSS의 유틸리티 스타일을 하나의 클래스 등에 포함시키는 방법
+        @apply px-3 py-2 rounded bg-white/[.05] shadow-lg text-[.6rem]; // Tailwind CSS의 유틸리티 스타일을 하나의 클래스 등에 포함시키는 방법
         @apply hover:bg-blue-300/[.3];
         @apply focus:bg-blue-300/[.15] focus:outline focus:outline-offset-2 focus:outline-1 focus:outline-emerald-500;
         @apply active:bg-blue-300/[.5];
