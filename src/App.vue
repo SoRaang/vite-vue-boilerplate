@@ -6,6 +6,10 @@
             <div class="container mx-auto my-4 px-2">
                 <router-view></router-view>
             </div>
+
+            <div @click="aniThis" id="helloworld">
+                김헬로월드
+            </div>
         </main>
 
         <FootPrimary></FootPrimary>
@@ -13,17 +17,16 @@
 </template> <!-- Template Ends -->
 
 <script setup>
+    import anime from 'animejs'
     import HeadPrimary from './components/HeadPrimary.vue'
     import FootPrimary from './components/FootPrimary.vue'
 
-    { // Meta Data Settings
-        metaInfo: {
-            meta: [
-                { charset: 'UTF-8' },
-                { name: 'viewport', content: 'width=device-width, initial-scale=1.0' }
-            ]
-        }
-    }
+    const aniThis = () => anime({
+        targets: '#helloworld',
+        translateX: 250,
+        rotate: '1turn',
+        duration: 800
+    })
 </script> <!-- Logic Ends -->
 
 <style lang="scss" scoped>

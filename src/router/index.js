@@ -10,6 +10,18 @@ const User = { // Temp. Template For Nested Route
     `
 }
 
+const UserProfile = `
+    <div>
+        Profile
+    </div>
+`
+
+const UserPosts = `
+    <div>
+        Posts
+    </div>
+`
+
 const routes = [
     { path: '/', name: 'Main', component: Main }, // Nomal Route
     { path: '/details/:id', component: () => import( /* webpackChunkName: 'ItemDetail' */ '@/views/ItemDetail.vue' ) }, // Dynamic Route
