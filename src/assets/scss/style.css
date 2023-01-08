@@ -27,8 +27,6 @@
 
 body {
   height: 100%;
-  background-color: rgb(var(--default-background-color, 6, 27, 34));
-  color: rgb(var(--default-text-color, 238, 238, 238));
   font-size: 0.8rem;
 }
 
@@ -41,3 +39,52 @@ body {
   overflow-x: hidden;
   overflow-y: overlay;
 }
+
+/* _default.scss */
+/* _setup.scss */
+body {
+  background-color: rgb(var(--color-base));
+  color: rgb(var(--color-text));
+}
+
+/* _setup.scss */
+/* _functions.scss */
+/* _functions.scss */
+/* _variables.scss */
+/* _variables.scss */
+/* _light.scss */
+@media (prefers-color-scheme: light) {
+  :root {
+    --color-base: 255, 255, 255;
+    --color-text: 51, 65, 85;
+    --color-text-highlight: 255, 255, 255;
+    --color-text-anti: 51, 65, 85;
+    --color-highlight: ;
+    --color-agree: ;
+    --color-warn: ;
+    --color-error: ;
+    --color-disable: ;
+    --color-pane: 204, 211, 255;
+  }
+}
+/* _light.scss */
+/* _dark.scss */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-base: 6, 27, 34;
+    --color-text: 238, 238, 238;
+    --color-text-highlight: 255, 255, 255;
+    --color-text-anti: 51, 65, 85;
+    --color-highlight: ;
+    --color-agree: ;
+    --color-warn: ;
+    --color-error: ;
+    --color-disable: ;
+    --color-pane: 255, 255, 255;
+  }
+}
+/* _dark.scss */
+/* _ItemDetail.scss */
+/* _ItemDetail.scss */
+/* _MainSlider.scss */
+/* _MainSlider.scss */

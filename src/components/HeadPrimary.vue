@@ -6,25 +6,19 @@
             </h1>
 
             <nav id="navPrimary" class="flex items-center gap-2">
-                <button type="button" class="nav-item">
-                    <router-link to="/projects">프로젝트별 일정</router-link>
-                </button>
-                <button type="button" class="nav-item">
-                    <router-link to="/workflow">개인별 업무일정표</router-link>
-                </button>
-                <button type="button" class="nav-item">
-                    <router-link to="/storage">자료실</router-link>
-                </button>
+                <ul>
+                    <li>
+                        <router-link to="/details/001" class="nav-item">링크</router-link>
+                    </li>
+                </ul>
             </nav>
         </div>
     </header>
-
-    <!-- Template Ends -->
-</template>
+</template> <!-- Template Ends -->
 
 <script setup>
-    /* Logic Ends */
-</script>
+
+</script> <!-- Logic Ends -->
 
 <style lang="scss" scoped>
     #mainLogo {
@@ -43,9 +37,7 @@
         @apply active:bg-blue-300/[.5];
     }
 
-    .nav-item:has(.router-link-active) {
+    .nav-item:is(.router-link-active) {
         @apply bg-emerald-500;
     }
-
-    // Stylesheet Ends
-</style>
+</style> <!-- Stylesheet Ends -->

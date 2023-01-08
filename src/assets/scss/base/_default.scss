@@ -31,8 +31,6 @@
 
 body {
     height: 100%;
-    background-color: rgb(var(--default-background-color, 6, 27, 34));
-    color: rgb(var(--default-text-color, 238, 238, 238));
     font-size: .8rem;
 }
 
@@ -45,3 +43,5 @@ body {
     overflow-x: hidden;
     overflow-y: overlay;
 }
+
+/* _default.scss */

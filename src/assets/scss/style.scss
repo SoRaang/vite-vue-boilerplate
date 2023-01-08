@@ -1,5 +1,25 @@
 @use 'sass:list';
 @use 'sass:math';
 
-// Compile Everything
-@import 'base/default';
+// 1. Base
+@import
+    'base/default', // Default (Reset)
+    'base/setup'; // Set Basic Styles
+
+// 2. Abstracts
+@import
+    'abstracts/functions', // SASS Functions
+    'abstracts/variables'; // Global Variables
+
+// 3. Themes
+@import
+    'themes/light', // System Light Theme
+    'themes/dark'; // System Dark Theme
+
+// 4. Views
+@import
+    'views/ItemDetail'; // ItemDetail.vue
+
+// 5. Components
+@import
+    'components/MainSlider'; // MainSlider.vue

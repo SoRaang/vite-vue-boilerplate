@@ -10,17 +10,13 @@
 
         <FootPrimary></FootPrimary>
     </div>
-
-    <!-- Template Ends -->
-</template>
+</template> <!-- Template Ends -->
 
 <script setup>
     import HeadPrimary from './components/HeadPrimary.vue'
     import FootPrimary from './components/FootPrimary.vue'
-
-    /* Logic Ends */
-</script>
+</script> <!-- Logic Ends -->
 
 <style lang="scss" scoped>
-    // Stylesheet Ends
-</style>
+
+</style> <!-- Stylesheet Ends -->
