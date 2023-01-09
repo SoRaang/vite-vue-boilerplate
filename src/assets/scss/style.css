@@ -72,7 +72,7 @@ body {
 @media (prefers-color-scheme: dark) {
   :root {
     --color-base: 6, 27, 34;
-    --color-text: 238, 238, 238;
+    --color-text: 209, 209, 209;
     --color-text-highlight: 255, 255, 255;
     --color-text-anti: 51, 65, 85;
     --color-highlight: ;
