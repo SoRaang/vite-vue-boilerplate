@@ -86,5 +86,16 @@ body {
 /* _dark.scss */
 /* _ItemDetail.scss */
 /* _ItemDetail.scss */
-/* _MainSlider.scss */
-/* _MainSlider.scss */
+/* _ReactiveComponents.scss */
+[data-modal-window] {
+  position: fixed;
+  inset: 0;
+  margin: auto;
+  width: max(100% - 0.4rem, 16rem);
+}
+
+[data-modal-innards] {
+  background-color: var(--color-base);
+}
+
+/* _ReactiveComponents.scss */

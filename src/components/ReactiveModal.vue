@@ -1,16 +1,18 @@
 <template>
-    <dialog>
-        <header data-modal-header>
-            <h2 data-modal-title></h2>
-        </header>
+    <dialog data-modal-window>
+        <div data-modal-innards>
+            <header data-modal-header>
+                <h2 data-modal-title>제목</h2>
+            </header>
 
-        <div data-modal-content>
+            <div data-modal-content>
+                내용
+            </div>
 
+            <footer data-modal-footer>
+                컨트롤러
+            </footer>
         </div>
-
-        <footer data-modal-footer>
-
-        </footer>
     </dialog>
 </template> <!-- Template Ends -->
 

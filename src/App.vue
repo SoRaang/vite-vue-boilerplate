@@ -7,13 +7,10 @@
         </main>
 
         <FootPrimary />
-
-        <LoadSpinner />
     </div>
 </template> <!-- Template Ends -->
 
 <script setup>
-    import LoadSpinner from './components/LoadSpinner.vue'
     import HeadPrimary from './components/HeadPrimary.vue'
     import FootPrimary from './components/FootPrimary.vue'
 </script> <!-- Logic Ends -->
