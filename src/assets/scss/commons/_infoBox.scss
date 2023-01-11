@@ -1,0 +1,47 @@
+/* _infoBox.scss */
+
+.info-box {
+    @apply relative m-4 p-4 rounded-md;
+
+    background-color: rgba(var(--info-type), .25);
+
+    &::before {
+        display: block;
+        margin-block-end: 1rem;
+        font-family: 'NS-Neo', sans-serif;
+        color: rgb(var(--color-text-highlight));
+        font-size: var(--font-title-m);
+        font-weight: 900;
+        content: attr(data-infobox-name);
+    }
+
+    &::after {
+        @apply rounded-md;
+
+        display: block;
+        position: absolute;
+        inset: 0;
+        border: 1px solid rgba(var(--info-type), .5);
+        mix-blend-mode: screen;
+        pointer-events: none;
+        content: '';
+    }
+
+    &.info {
+        --info-type: var(--color-inter-neutral);
+    }
+
+    &.safe {
+        --info-type: var(--color-inter-agree);
+    }
+
+    &.warn {
+        --info-type: var(--color-inter-warn);
+    }
+
+    &.alert {
+        --info-type: var(--color-inter-error);
+    }
+}
+
+/* _infoBox.scss */

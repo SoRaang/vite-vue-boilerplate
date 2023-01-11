@@ -22,4 +22,8 @@
 
 // 5. Components
 @import
-    'components/ReactiveModal' // ReactiveModal.vue
+    'components/ReactiveModal'; // ReactiveModal.vue
+
+// 6. Repeating Items
+@import
+    'commons/infoBox';

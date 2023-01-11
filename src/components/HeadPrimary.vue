@@ -1,24 +1,30 @@
 <template>
     <header id="headPrimary">
-        <div class="container flex justify-between items-center px-2">
+        <div class="container flex justify-between items-center px-2 h-full">
             <h1 id="mainLogo">
                 <router-link to="/">소나무정보기술</router-link>
             </h1>
 
-            <nav id="navPrimary">
-                <ul class="flex items-center gap-2">
-                    <li v-for="navItem in navGroup">
-                        <router-link :to="navItem.linkTo" class="nav-item">
+            <nav id="navPrimary" class="contents">
+                <ul class="nav-list">
+                    <li v-for="navItem in navGroup" class="nav-item">
+                        <router-link :to="navItem.linkTo">
                             <span>{{ navItem.navText }}</span>
                         </router-link>
 
-                        <ul v-if="navItem.childrens" class="absolute">
-                            <li v-for="subItem in navItem.childrens">
+                        <ul v-if="navItem.childrens" class="sub-list">
+                            <li v-for="subItem in navItem.childrens" class="sub-item">
                                 <router-link :to="subItem.subTo">
                                     <span>{{ subItem.subName }}</span>
                                 </router-link>
                             </li>
                         </ul>
+                    </li>
+
+                    <li>
+                        <button type="button" id="toggleMode" title="화면 모드 전환" @click="">
+                            <i class="ri-contrast-2-fill"></i>
+                        </button>
                     </li>
                 </ul>
             </nav>
@@ -72,20 +78,78 @@
 
 <style lang="scss" scoped>
     #mainLogo {
+        color: rgb(var(--color-text-highlight));
+        font-family: 'NS-Neo', sans-serif;
         font-size: 1.8rem;
         font-weight: 900;
     }
 
     #headPrimary {
-        @apply flex justify-center items-center fixed top-0 left-0 right-0 h-16 bg-white/[.05] backdrop-blur-lg transition z-50;
+        @apply flex justify-center items-center fixed top-0 left-0 right-0 h-16 z-50;
+
+        border-block-end: 1px solid rgba(var(--color-inter-shade), .25);
+
+        &::before {
+            display: block;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            right: 0;
+            height: 0;
+            background-color: transparent;
+            content: '';
+        }
 
         &:hover {
-            background-color: rgb(var(--color-pane));
-            color: rgba(var(--color-text-anti), .75);
+            background-color: rgb(var(--color-inter-pane));
+            box-shadow: 0 0 0 10000vmax rgba(0, 0, 0, .5);
+            color: rgba(var(--color-text-highlight), .75);
+
+            &::before {
+                background-color: rgba(var(--color-inter-pane), .75);
+                height: 12rem;
+            }
+
+            .sub-list {
+                top: 100%;
+            }
         }
     }
 
+    .nav-list {
+        @apply flex items-center gap-2 h-full;
+    }
+
     .nav-item {
-        @apply px-3;
+        @apply flex items-center relative px-8 h-full;
+
+        &:hover {
+            background-image: linear-gradient(to top, rgb(var(--color-inter-shade)) .1rem, transparent .1rem);
+
+            > .sub-list {
+                background-color: rgb(var(--color-inter-pane));
+            }
+        }
+
+        &:has(.router-link-active) {
+            background-image: linear-gradient(to top, rgb(var(--color-inter-shade)) .1rem, transparent .1rem);
+        }
+    }
+
+    .sub-list {
+        @apply absolute left-0 right-0;
+
+        top: -500%;
+        height: 12rem;
+    }
+
+    .sub-item {
+        @apply py-3;
+
+        text-align: center;
+    }
+
+    #toggleMode {
+        display: block;
     }
 </style> <!-- Stylesheet Ends -->

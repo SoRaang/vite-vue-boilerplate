@@ -8,6 +8,7 @@ import router from './router/index.js'
 
 // Else
 import 'vue-global-api'
+import 'remixicon/fonts/remixicon.css'
 import './assets/scss/style.css'
 
 // Initializing

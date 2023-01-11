@@ -1,8 +1,59 @@
 /* _setup.scss */
 
+:root {
+    --color-id-main: 40, 65, 255;
+    --color-id-sub: 123, 242, 204;
+    --color-id-01: 186, 223, 255;
+    --color-id-02: 38, 46, 111;
+
+    --color-inter-neutral: 30, 52, 168;
+    --color-inter-agree: 65, 234, 101;
+    --color-inter-warn: 255, 226, 32;
+    --color-inter-error: 228, 88, 77;
+    --color-inter-disable: 168, 171, 185;
+
+    --font-title-xl: 2rem;
+    --font-title-l: 1.6rem;
+    --font-title-m: 1rem;
+    --font-title-s: .8rem;
+}
+
+* {
+    // outline: 1px solid red;
+}
+
 body {
+    min-height: 100vh;
     background-color: rgb(var(--color-base));
     color: rgba(var(--color-text), .75);
+}
+
+h2 {
+
+}
+
+h3 {
+
+}
+
+h4 {
+
+}
+
+h5 { // Mostly Not Use
+
+}
+
+h6 { // Mostly Not Use
+
+}
+
+i {
+    display: block;
+}
+
+svg {
+    display: block;
 }
 
 /* _setup.scss */

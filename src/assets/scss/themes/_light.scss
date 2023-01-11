@@ -2,18 +2,14 @@
 
 @media (prefers-color-scheme: light) {
     :root {
-        --color-base: 255, 255, 255;
-        --color-text: 51, 65, 85;
-        --color-text-highlight: 255, 255, 255;
-        --color-text-anti: 51, 65, 85;
-
+        --color-base: 242, 243, 255;
         --color-highlight: ;
-        --color-agree: ;
-        --color-warn: ;
-        --color-error: ;
-        --color-disable: ;
+        --color-text: 51, 65, 85;
+        --color-text-highlight: 0, 0, 0;
+        --color-text-anti: 209, 209, 209;
 
-        --color-pane: 204, 211, 255;
+        --color-inter-pane: 255, 255, 255;
+        --color-inter-shade: 0, 0, 0;
     }
 }
 

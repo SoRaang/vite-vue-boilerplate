@@ -2,17 +2,24 @@
 @tailwind components;
 @tailwind utilities;
 @font-face {
-  font-family: "SUIT Variable";
+  font-family: "SUIT";
   src: local("SUIT Variable"), url("@/assets/fonts/SUIT-Variable.woff2") format("woff2-variations");
   font-weight: 100 900;
   font-style: normal;
   font-display: swap;
 }
+@font-face {
+  font-family: "NS-Neo";
+  src: local("NanumSquareNeo Variable"), url("@/assets/fonts/NanumSquareNeo-Variable.woff2") format("woff2-variations");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
 :root {
-  font-family: "SUIT Variable", sans-serif;
+  font-family: "SUIT", sans-serif;
   font-size: 20px;
   line-height: 1;
-  overflow: hidden;
+  scroll-behavior: smooth;
 }
 
 *,
@@ -34,9 +41,34 @@ body {
 
 /* _default.scss */
 /* _setup.scss */
+:root {
+  --color-id-main: 40, 65, 255;
+  --color-id-sub: 123, 242, 204;
+  --color-id-01: 186, 223, 255;
+  --color-id-02: 38, 46, 111;
+  --color-inter-neutral: 30, 52, 168;
+  --color-inter-agree: 65, 234, 101;
+  --color-inter-warn: 255, 226, 32;
+  --color-inter-error: 228, 88, 77;
+  --color-inter-disable: 168, 171, 185;
+  --font-title-xl: 2rem;
+  --font-title-l: 1.6rem;
+  --font-title-m: 1rem;
+  --font-title-s: .8rem;
+}
+
 body {
+  min-height: 100vh;
   background-color: rgb(var(--color-base));
   color: rgba(var(--color-text), 0.75);
+}
+
+i {
+  display: block;
+}
+
+svg {
+  display: block;
 }
 
 /* _setup.scss */
@@ -47,32 +79,26 @@ body {
 /* _light.scss */
 @media (prefers-color-scheme: light) {
   :root {
-    --color-base: 255, 255, 255;
-    --color-text: 51, 65, 85;
-    --color-text-highlight: 255, 255, 255;
-    --color-text-anti: 51, 65, 85;
+    --color-base: 242, 243, 255;
     --color-highlight: ;
-    --color-agree: ;
-    --color-warn: ;
-    --color-error: ;
-    --color-disable: ;
-    --color-pane: 204, 211, 255;
+    --color-text: 51, 65, 85;
+    --color-text-highlight: 0, 0, 0;
+    --color-text-anti: 209, 209, 209;
+    --color-inter-pane: 255, 255, 255;
+    --color-inter-shade: 0, 0, 0;
   }
 }
 /* _light.scss */
 /* _dark.scss */
 @media (prefers-color-scheme: dark) {
   :root {
-    --color-base: 6, 27, 34;
+    --color-base: 6, 24, 58;
+    --color-highlight: ;
     --color-text: 209, 209, 209;
     --color-text-highlight: 255, 255, 255;
     --color-text-anti: 51, 65, 85;
-    --color-highlight: ;
-    --color-agree: ;
-    --color-warn: ;
-    --color-error: ;
-    --color-disable: ;
-    --color-pane: 255, 255, 255;
+    --color-inter-pane: 0, 0, 0;
+    --color-inter-shade: 255, 255, 255;
   }
 }
 /* _dark.scss */
@@ -87,7 +113,46 @@ body {
 }
 
 [data-modal-innards] {
-  background-color: var(--color-base);
+  background-color: rgb(var(--color-pane));
 }
 
 /* _ReactiveComponents.scss */
+/* _infoBox.scss */
+.info-box {
+  @apply relative m-4 p-4 rounded-md;
+  background-color: rgba(var(--info-type), 0.25);
+}
+.info-box::before {
+  display: block;
+  -webkit-margin-after: 1rem;
+          margin-block-end: 1rem;
+  font-family: "NS-Neo", sans-serif;
+  color: rgb(var(--color-text-highlight));
+  font-size: var(--font-title-m);
+  font-weight: 900;
+  content: attr(data-infobox-name);
+}
+.info-box::after {
+  @apply rounded-md;
+  display: block;
+  position: absolute;
+  inset: 0;
+  border: 1px solid rgba(var(--info-type), 0.5);
+  mix-blend-mode: screen;
+  pointer-events: none;
+  content: "";
+}
+.info-box.info {
+  --info-type: var(--color-inter-neutral);
+}
+.info-box.safe {
+  --info-type: var(--color-inter-agree);
+}
+.info-box.warn {
+  --info-type: var(--color-inter-warn);
+}
+.info-box.alert {
+  --info-type: var(--color-inter-error);
+}
+
+/* _infoBox.scss */

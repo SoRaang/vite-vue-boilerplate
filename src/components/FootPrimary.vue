@@ -12,6 +12,6 @@
 
 <style lang="scss" scoped>
     #footPrimary {
-        @apply mt-auto px-2 py-4 bg-slate-400/[.05];
+        @apply mt-auto px-2 py-4;
     }
 </style> <!-- Stylesheet Ends -->
