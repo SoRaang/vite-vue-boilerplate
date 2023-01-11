@@ -1,9 +1,13 @@
 @use 'sass:list';
 @use 'sass:math';
 
+// 0. Reset
+@import
+    'vendors/normalize';
+
 // 1. Base
 @import
-    'base/default', // Default (Reset)
+    'base/default', // Default
     'base/setup'; // Set Basic Styles
 
 // 2. Abstracts

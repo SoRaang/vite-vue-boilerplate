@@ -2,14 +2,14 @@
 
 @media (prefers-color-scheme: dark) {
     :root {
-        --color-base: 6, 24, 58;
-        --color-highlight: ;
-        --color-text: 209, 209, 209;
-        --color-text-highlight: 255, 255, 255;
-        --color-text-anti: 51, 65, 85;
+        --clr-base: 6, 24, 58;
+        --clr-highlight: ;
+        --clr-text: 209, 209, 209;
+        --clr-text-highlight: 255, 255, 255;
+        --clr-text-anti: 51, 65, 85;
 
-        --color-inter-pane: 0, 0, 0;
-        --color-inter-shade: 255, 255, 255;
+        --clr-inter-pane: 0, 0, 0;
+        --clr-inter-shade: 255, 255, 255;
     }
 }
 

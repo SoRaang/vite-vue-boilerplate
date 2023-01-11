@@ -25,7 +25,7 @@
     }
 </script> <!-- Logic Ends -->
 
-<style lang="scss" scoped>
+<style lang="scss">
     #floatButtons {
         position: fixed;
         bottom: 1rem;

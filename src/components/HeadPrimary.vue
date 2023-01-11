@@ -76,9 +76,9 @@
     ])
 </script> <!-- Logic Ends -->
 
-<style lang="scss" scoped>
+<style lang="scss">
     #mainLogo {
-        color: rgb(var(--color-text-highlight));
+        color: rgb(var(--clr-text-highlight));
         font-family: 'NS-Neo', sans-serif;
         font-size: 1.8rem;
         font-weight: 900;
@@ -87,7 +87,7 @@
     #headPrimary {
         @apply flex justify-center items-center fixed top-0 left-0 right-0 h-16 z-50;
 
-        border-block-end: 1px solid rgba(var(--color-inter-shade), .25);
+        border-block-end: 1px solid rgba(var(--clr-inter-shade), .25);
 
         &::before {
             display: block;
@@ -101,12 +101,12 @@
         }
 
         &:hover {
-            background-color: rgb(var(--color-inter-pane));
+            background-color: rgb(var(--clr-inter-pane));
             box-shadow: 0 0 0 10000vmax rgba(0, 0, 0, .5);
-            color: rgba(var(--color-text-highlight), .75);
+            color: rgba(var(--clr-text-highlight), .75);
 
             &::before {
-                background-color: rgba(var(--color-inter-pane), .75);
+                background-color: rgba(var(--clr-inter-pane), .75);
                 height: 12rem;
             }
 
@@ -124,15 +124,15 @@
         @apply flex items-center relative px-8 h-full;
 
         &:hover {
-            background-image: linear-gradient(to top, rgb(var(--color-inter-shade)) .1rem, transparent .1rem);
+            background-image: linear-gradient(to top, rgb(var(--clr-inter-shade)) .1rem, transparent .1rem);
 
             > .sub-list {
-                background-color: rgb(var(--color-inter-pane));
+                background-color: rgb(var(--clr-inter-pane));
             }
         }
 
         &:has(.router-link-active) {
-            background-image: linear-gradient(to top, rgb(var(--color-inter-shade)) .1rem, transparent .1rem);
+            background-image: linear-gradient(to top, rgb(var(--clr-inter-shade)) .1rem, transparent .1rem);
         }
     }
 

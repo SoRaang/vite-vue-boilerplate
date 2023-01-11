@@ -10,7 +10,7 @@
     const currentYear = ref(new Date().getFullYear())
 </script> <!-- Logic Ends -->
 
-<style lang="scss" scoped>
+<style lang="scss">
     #footPrimary {
         @apply mt-auto px-2 py-4;
     }

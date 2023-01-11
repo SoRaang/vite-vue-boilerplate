@@ -10,6 +10,6 @@
 
 </script> <!-- Logic Ends -->
 
-<style lang="scss" scoped>
+<style lang="scss">
 
 </style> <!-- Stylesheet Ends -->
