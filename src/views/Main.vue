@@ -10,10 +10,6 @@
             <source src="../assets/misc/office.mp4" type="video/mp4">
         </video>
     </div>
-
-    <div id="mainPage" class="flex flex-col gap-4 container mx-auto my-4 px-2">
-
-    </div>
 </template> <!-- Template Ends -->
 
 <script setup>

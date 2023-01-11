@@ -2,7 +2,7 @@
 
 body {
     background-color: rgb(var(--color-base));
-    color: rgb(var(--color-text));
+    color: rgba(var(--color-text), .75);
 }
 
 /* _setup.scss */

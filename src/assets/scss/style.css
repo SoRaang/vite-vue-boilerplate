@@ -9,7 +9,6 @@
   font-display: swap;
 }
 :root {
-  height: 100%;
   font-family: "SUIT Variable", sans-serif;
   font-size: 20px;
   line-height: 1;
@@ -26,25 +25,18 @@
 }
 
 body {
-  height: 100%;
   font-size: 0.8rem;
 }
 
-#app {
-  height: 100%;
-}
-
 #wrap {
-  height: 100%;
   overflow-x: hidden;
-  overflow-y: overlay;
 }
 
 /* _default.scss */
 /* _setup.scss */
 body {
   background-color: rgb(var(--color-base));
-  color: rgb(var(--color-text));
+  color: rgba(var(--color-text), 0.75);
 }
 
 /* _setup.scss */
