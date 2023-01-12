@@ -13,7 +13,8 @@
 // 2. Abstracts
 @import
     'abstracts/functions', // SASS Functions
-    'abstracts/variables'; // Global Variables
+    'abstracts/variables', // CSS Animations
+    'abstracts/keyframes'; // Global Variables
 
 // 3. Themes
 @import
@@ -22,6 +23,7 @@
 
 // 4. Views
 @import
+    'views/Main',
     'views/ItemDetail'; // ItemDetail.vue
 
 // 5. Components

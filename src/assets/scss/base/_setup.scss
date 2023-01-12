@@ -12,10 +12,9 @@
     --clr-inter-error: 228, 88, 77;
     --clr-inter-disable: 168, 171, 185;
 
-    --fnt-title-xl: 2rem;
-    --fnt-title-lg: 1.6rem;
-    --fnt-title-md: 1rem;
-    --fnt-title-sm: .8rem;
+    --fnt-title-lg: 1.8rem;
+    --fnt-title-md: 1.4rem;
+    --fnt-title-sm: 1rem;
 
     --fnt-md: .7rem;
     --fnt-sm: .6rem;
@@ -47,31 +46,24 @@ body {
 }
 
 h2 {
-    font-size: var(--fnt-title-xl);
-}
-
-h3 {
     font-size: var(--fnt-title-lg);
 }
 
-h4 {
+h3 {
     font-size: var(--fnt-title-md);
 }
 
-h5 {
+h4 {
     font-size: var(--fnt-title-sm);
 }
 
-h6 { // Mostly Not Use
-
-}
-
-i,
 img,
 picture,
+i,
 svg,
 video {
     display: block;
+    object-fit: cover;
 }
 
 #wrap {
