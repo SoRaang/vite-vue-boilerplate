@@ -334,6 +334,8 @@ i,
 svg,
 video {
   display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 #wrap {
@@ -346,6 +348,8 @@ video {
 /* _functions.scss */
 /* _variables.scss */
 /* _variables.scss */
+/* _keyframes.scss */
+/* _keyframes.scss */
 /* _light.scss */
 @media (prefers-color-scheme: light) {
   :root {
@@ -376,18 +380,13 @@ video {
 /* => 메인 히어로 섹션 */
 #mainHero {
   position: relative;
-  z-index: unset;
 }
 
 .hero-overlay {
-  display: grid;
-  place-items: center;
-  position: absolute;
-  inset: 0;
+  @apply grid items-center absolute inset-0 text-center;
   color: white;
   font-size: 25vw;
   font-weight: 900;
-  text-align: center;
   line-height: 0.8;
 }
 
@@ -399,22 +398,68 @@ video {
 }
 
 /* <= 메인 히어로 섹션 끝 */
+/* => 메인 캐치프레이즈 섹션 */
+/* <= 메인 캐치프레이즈 섹션 끝 */
 /* => 메인 사업 분야 섹션 */
+#mainPortfolio {
+  @apply flex flex-col gap-10;
+}
+
 .portfolio-category {
-  @apply grid grid-cols-2 container mx-auto;
+  @apply flex justify-center gap-20 container mx-auto;
+}
+
+.portfolio-description {
+  @apply grow-0 shrink basis-1/2 flex flex-col justify-center;
+}
+
+[data-pf-category-tag] {
+  @apply flex gap-1;
+}
+
+.portfolio-tag {
+  @apply px-3 py-2 rounded;
+  background-color: rgb(var(--clr-inter-pane));
 }
 
 .portfolio-picture {
-  position: relative;
+  @apply grow-0 shrink basis-1/2 relative;
+  height: 24vmax;
 }
 
 [data-pf-category-image] {
-  position: absolute;
-  top: 0;
-  bottom: 0;
+  @apply absolute top-0 bottom-0 max-w-none h-full;
+  width: 50vmax;
+}
+
+.portfolio-category:nth-child(odd) .portfolio-description {
+  order: -1;
+}
+.portfolio-category:nth-child(odd) [data-pf-category-image] {
+  left: 0;
+}
+.portfolio-category:nth-child(even) .portfolio-picture {
+  order: -1;
+}
+.portfolio-category:nth-child(even) [data-pf-category-image] {
+  right: 0;
 }
 
 /* <= 메인 사업 분야 섹션 끝 */
+/* => 메인 소개 섹션 */
+/* <= 메인 소개 섹션 끝 */
+/* => 메인 뉴스 섹션 */
+.recent-article {
+  @apply grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.recent-article-slider {
+  @apply flex gap-2;
+  grid-column: 2/5;
+}
+
+/* <= 메인 뉴스 섹션 끝 */
 /* _Main.scss */
 /* _ItemDetail.scss */
 /* _ItemDetail.scss */
