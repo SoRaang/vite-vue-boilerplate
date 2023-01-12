@@ -9,16 +9,16 @@ Use a better box model (opinionated).
 *,
 ::before,
 ::after {
-  box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 /**
 Use a more readable tab size (opinionated).
 */
 html {
-  -moz-tab-size: 4;
-  -o-tab-size: 4;
-     tab-size: 4;
+	-moz-tab-size: 4;
+	-o-tab-size: 4;
+	   tab-size: 4;
 }
 
 /**
@@ -26,8 +26,8 @@ html {
 2. Prevent adjustments of font size after orientation changes in iOS.
 */
 html {
-  line-height: 1.15; /* 1 */
-  -webkit-text-size-adjust: 100%; /* 2 */
+	line-height: 1.15; /* 1 */
+	-webkit-text-size-adjust: 100%; /* 2 */
 }
 
 /*
@@ -38,14 +38,14 @@ Sections
 Remove the margin in all browsers.
 */
 body {
-  margin: 0;
+	margin: 0;
 }
 
 /**
 Improve consistency of default fonts in all browsers. (https://github.com/sindresorhus/modern-normalize/issues/3)
 */
 body {
-  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+	font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
 }
 
 /*
@@ -57,8 +57,8 @@ Grouping content
 2. Correct the inheritance of border color in Firefox. (https://bugzilla.mozilla.org/show_bug.cgi?id=190655)
 */
 hr {
-  height: 0; /* 1 */
-  color: inherit; /* 2 */
+	height: 0; /* 1 */
+	color: inherit; /* 2 */
 }
 
 /*
@@ -69,8 +69,8 @@ Text-level semantics
 Add the correct text decoration in Chrome, Edge, and Safari.
 */
 abbr[title] {
-  -webkit-text-decoration: underline dotted;
-          text-decoration: underline dotted;
+	-webkit-text-decoration: underline dotted;
+	        text-decoration: underline dotted;
 }
 
 /**
@@ -78,7 +78,7 @@ Add the correct font weight in Edge and Safari.
 */
 b,
 strong {
-  font-weight: bolder;
+	font-weight: bolder;
 }
 
 /**
@@ -89,15 +89,15 @@ code,
 kbd,
 samp,
 pre {
-  font-family: ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", Menlo, monospace; /* 1 */
-  font-size: 1em; /* 2 */
+	font-family: ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", Menlo, monospace; /* 1 */
+	font-size: 1em; /* 2 */
 }
 
 /**
 Add the correct font size in all browsers.
 */
 small {
-  font-size: 80%;
+	font-size: 80%;
 }
 
 /**
@@ -105,18 +105,18 @@ Prevent 'sub' and 'sup' elements from affecting the line height in all browsers.
 */
 sub,
 sup {
-  font-size: 75%;
-  line-height: 0;
-  position: relative;
-  vertical-align: baseline;
+	font-size: 75%;
+	line-height: 0;
+	position: relative;
+	vertical-align: baseline;
 }
 
 sub {
-  bottom: -0.25em;
+	bottom: -0.25em;
 }
 
 sup {
-  top: -0.5em;
+	top: -0.5em;
 }
 
 /*
@@ -128,8 +128,8 @@ Tabular data
 2. Correct table border color inheritance in all Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=935729, https://bugs.webkit.org/show_bug.cgi?id=195016)
 */
 table {
-  text-indent: 0; /* 1 */
-  border-color: inherit; /* 2 */
+	text-indent: 0; /* 1 */
+	border-color: inherit; /* 2 */
 }
 
 /*
@@ -145,10 +145,10 @@ input,
 optgroup,
 select,
 textarea {
-  font-family: inherit; /* 1 */
-  font-size: 100%; /* 1 */
-  line-height: 1.15; /* 1 */
-  margin: 0; /* 2 */
+	font-family: inherit; /* 1 */
+	font-size: 100%; /* 1 */
+	line-height: 1.15; /* 1 */
+	margin: 0; /* 2 */
 }
 
 /**
@@ -157,7 +157,7 @@ Remove the inheritance of text transform in Edge and Firefox.
 */
 button,
 select { /* 1 */
-  text-transform: none;
+	text-transform: none;
 }
 
 /**
@@ -167,22 +167,22 @@ button,
 [type=button],
 [type=reset],
 [type=submit] {
-  -webkit-appearance: button;
+	-webkit-appearance: button;
 }
 
 /**
 Remove the inner border and padding in Firefox.
 */
 ::-moz-focus-inner {
-  border-style: none;
-  padding: 0;
+	border-style: none;
+	padding: 0;
 }
 
 /**
 Restore the focus styles unset by the previous rule.
 */
 :-moz-focusring {
-  outline: 1px dotted ButtonText;
+	outline: 1px dotted ButtonText;
 }
 
 /**
@@ -190,21 +190,21 @@ Remove the additional ':invalid' styles in Firefox.
 See: https://github.com/mozilla/gecko-dev/blob/2f9eacd9d3d995c937b4251a5557d95d494c9be1/layout/style/res/forms.css#L728-L737
 */
 :-moz-ui-invalid {
-  box-shadow: none;
+	box-shadow: none;
 }
 
 /**
 Remove the padding so developers are not caught out when they zero out 'fieldset' elements in all browsers.
 */
 legend {
-  padding: 0;
+	padding: 0;
 }
 
 /**
 Add the correct vertical alignment in Chrome and Firefox.
 */
 progress {
-  vertical-align: baseline;
+	vertical-align: baseline;
 }
 
 /**
@@ -212,7 +212,7 @@ Correct the cursor style of increment and decrement buttons in Safari.
 */
 ::-webkit-inner-spin-button,
 ::-webkit-outer-spin-button {
-  height: auto;
+	height: auto;
 }
 
 /**
@@ -220,15 +220,15 @@ Correct the cursor style of increment and decrement buttons in Safari.
 2. Correct the outline style in Safari.
 */
 [type=search] {
-  -webkit-appearance: textfield; /* 1 */
-  outline-offset: -2px; /* 2 */
+	-webkit-appearance: textfield; /* 1 */
+	outline-offset: -2px; /* 2 */
 }
 
 /**
 Remove the inner padding in Chrome and Safari on macOS.
 */
 ::-webkit-search-decoration {
-  -webkit-appearance: none;
+	-webkit-appearance: none;
 }
 
 /**
@@ -236,8 +236,8 @@ Remove the inner padding in Chrome and Safari on macOS.
 2. Change font properties to 'inherit' in Safari.
 */
 ::-webkit-file-upload-button {
-  -webkit-appearance: button; /* 1 */
-  font: inherit; /* 2 */
+	-webkit-appearance: button; /* 1 */
+	font: inherit; /* 2 */
 }
 
 /*
@@ -248,88 +248,88 @@ Interactive
 Add the correct display in Chrome and Safari.
 */
 summary {
-  display: list-item;
+	display: list-item;
 }
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 @font-face {
-  font-family: "SUIT";
-  src: local("SUIT Variable"), url("@/assets/fonts/SUIT-Variable.woff2") format("woff2-variations");
-  font-weight: 100 900;
-  font-style: normal;
-  font-display: swap;
+	font-family: "SUIT";
+	src: local("SUIT Variable"), url("@/assets/fonts/SUIT-Variable.woff2") format("woff2-variations");
+	font-weight: 100 900;
+	font-style: normal;
+	font-display: swap;
 }
 @font-face {
-  font-family: "NS-Neo";
-  src: local("NanumSquareNeo Variable"), url("@/assets/fonts/NanumSquareNeo-Variable.woff2") format("woff2-variations");
-  font-weight: 100 900;
-  font-style: normal;
-  font-display: swap;
+	font-family: "NS-Neo";
+	src: local("NanumSquareNeo Variable"), url("@/assets/fonts/NanumSquareNeo-Variable.woff2") format("woff2-variations");
+	font-weight: 100 900;
+	font-style: normal;
+	font-display: swap;
 }
 :root {
-  font-family: "SUIT", sans-serif;
-  font-size: 20px;
-  line-height: 1;
-  scroll-behavior: smooth;
+	font-family: "SUIT", sans-serif;
+	font-size: 20px;
+	line-height: 1;
+	scroll-behavior: smooth;
 }
 
 *,
 *::before,
 *::after {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font: inherit;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font: inherit;
 }
 
 /* _default.scss */
 /* _setup.scss */
 :root {
-  --clr-id-main: 40, 65, 255;
-  --clr-id-sub: 123, 242, 204;
-  --clr-id-01: 186, 223, 255;
-  --clr-id-02: 38, 46, 111;
-  --clr-inter-neutral: 30, 52, 168;
-  --clr-inter-agree: 65, 234, 101;
-  --clr-inter-warn: 255, 226, 32;
-  --clr-inter-error: 228, 88, 77;
-  --clr-inter-disable: 168, 171, 185;
-  --fnt-title-xl: 2rem;
-  --fnt-title-lg: 1.6rem;
-  --fnt-title-md: 1rem;
-  --fnt-title-sm: .8rem;
-  --fnt-md: .7rem;
-  --fnt-sm: .6rem;
-  --fnt-xs: .5rem;
+	--clr-id-main: 40, 65, 255;
+	--clr-id-sub: 123, 242, 204;
+	--clr-id-01: 186, 223, 255;
+	--clr-id-02: 38, 46, 111;
+	--clr-inter-neutral: 30, 52, 168;
+	--clr-inter-agree: 65, 234, 101;
+	--clr-inter-warn: 255, 226, 32;
+	--clr-inter-error: 228, 88, 77;
+	--clr-inter-disable: 168, 171, 185;
+	--fnt-title-xl: 2rem;
+	--fnt-title-lg: 1.6rem;
+	--fnt-title-md: 1rem;
+	--fnt-title-sm: .8rem;
+	--fnt-md: .7rem;
+	--fnt-sm: .6rem;
+	--fnt-xs: .5rem;
 }
 
 body {
-  min-height: 100vh;
-  background-color: rgb(var(--clr-base));
-  font-family: "SUIT", sans-serif;
-  color: rgba(var(--clr-text), 0.75);
-  font-size: var(--fnt-md);
+	min-height: 100vh;
+	background-color: rgb(var(--clr-base));
+	font-family: "SUIT", sans-serif;
+	color: rgba(var(--clr-text), 0.75);
+	font-size: var(--fnt-md);
 }
 body.prevent-scroll {
-  overflow: hidden;
+	overflow: hidden;
 }
 
 h2 {
-  font-size: var(--fnt-title-xl);
+	font-size: var(--fnt-title-xl);
 }
 
 h3 {
-  font-size: var(--fnt-title-lg);
+	font-size: var(--fnt-title-lg);
 }
 
 h4 {
-  font-size: var(--fnt-title-md);
+	font-size: var(--fnt-title-md);
 }
 
 h5 {
-  font-size: var(--fnt-title-sm);
+	font-size: var(--fnt-title-sm);
 }
 
 i,
@@ -337,12 +337,12 @@ img,
 picture,
 svg,
 video {
-  display: block;
+	display: block;
 }
 
 #wrap {
-  position: relative;
-  overflow-x: hidden;
+	position: relative;
+	overflow-x: hidden;
 }
 
 /* _setup.scss */
@@ -352,81 +352,81 @@ video {
 /* _variables.scss */
 /* _light.scss */
 @media (prefers-color-scheme: light) {
-  :root {
-    --clr-base: 242, 243, 255;
-    --clr-highlight: ;
-    --clr-text: 51, 65, 85;
-    --clr-text-highlight: 0, 0, 0;
-    --clr-text-anti: 209, 209, 209;
-    --clr-inter-pane: 255, 255, 255;
-    --clr-inter-shade: 0, 0, 0;
-  }
+	:root {
+		--clr-base: 242, 243, 255;
+		--clr-highlight: ;
+		--clr-text: 51, 65, 85;
+		--clr-text-highlight: 0, 0, 0;
+		--clr-text-anti: 209, 209, 209;
+		--clr-inter-pane: 255, 255, 255;
+		--clr-inter-shade: 0, 0, 0;
+	}
 }
 /* _light.scss */
 /* _dark.scss */
 @media (prefers-color-scheme: dark) {
-  :root {
-    --clr-base: 9, 33, 34;
-    --clr-highlight: ;
-    --clr-text: 209, 209, 209;
-    --clr-text-highlight: 255, 255, 255;
-    --clr-text-anti: 51, 65, 85;
-    --clr-inter-pane: 0, 0, 0;
-    --clr-inter-shade: 255, 255, 255;
-  }
+	:root {
+		--clr-base: 9, 33, 34;
+		--clr-highlight: ;
+		--clr-text: 209, 209, 209;
+		--clr-text-highlight: 255, 255, 255;
+		--clr-text-anti: 51, 65, 85;
+		--clr-inter-pane: 0, 0, 0;
+		--clr-inter-shade: 255, 255, 255;
+	}
 }
 /* _dark.scss */
 /* _ItemDetail.scss */
 /* _ItemDetail.scss */
 /* _ReactiveComponents.scss */
 [data-modal-window] {
-  position: fixed;
-  inset: 0;
-  margin: auto;
-  width: max(100% - 0.4rem, 16rem);
+	position: fixed;
+	inset: 0;
+	margin: auto;
+	width: max(100% - 0.4rem, 16rem);
 }
 
 [data-modal-innards] {
-  background-color: rgb(var(--color-pane));
+	background-color: rgb(var(--color-pane));
 }
 
 /* _ReactiveComponents.scss */
 /* _infoBox.scss */
 .info-box {
-  @apply relative m-4 p-4 rounded-md;
-  background-color: rgba(var(--info-type), 0.25);
+	@apply relative m-4 p-4 rounded-md;
+	background-color: rgba(var(--info-type), 0.25);
 }
 .info-box::before {
-  display: block;
-  -webkit-margin-after: 1rem;
-          margin-block-end: 1rem;
-  font-family: "NS-Neo", sans-serif;
-  color: rgb(var(--clr-text-highlight));
-  font-size: var(--font-title-m);
-  font-weight: 900;
-  content: attr(data-infobox-name);
+	display: block;
+	-webkit-margin-after: 1rem;
+	        margin-block-end: 1rem;
+	font-family: "NS-Neo", sans-serif;
+	color: rgb(var(--clr-text-highlight));
+	font-size: var(--font-title-m);
+	font-weight: 900;
+	content: attr(data-infobox-name);
 }
 .info-box::after {
-  @apply rounded-md;
-  display: block;
-  position: absolute;
-  inset: 0;
-  border: 1px solid rgba(var(--info-type), 0.5);
-  mix-blend-mode: screen;
-  pointer-events: none;
-  content: "";
+	@apply rounded-md;
+	display: block;
+	position: absolute;
+	inset: 0;
+	border: 1px solid rgba(var(--info-type), 0.5);
+	mix-blend-mode: screen;
+	pointer-events: none;
+	content: "";
 }
 .info-box.info {
-  --info-type: var(--clr-inter-neutral);
+	--info-type: var(--clr-inter-neutral);
 }
 .info-box.safe {
-  --info-type: var(--clr-inter-agree);
+	--info-type: var(--clr-inter-agree);
 }
 .info-box.warn {
-  --info-type: var(--clr-inter-warn);
+	--info-type: var(--clr-inter-warn);
 }
 .info-box.alert {
-  --info-type: var(--clr-inter-error);
+	--info-type: var(--clr-inter-error);
 }
 
 /* _infoBox.scss */
