@@ -59,7 +59,7 @@
         },
         {
             bindIndex: 2,
-            linkTo: '/details/345',
+            linkTo: '/portfolio',
             navText: '구축사례'
         },
         {
