@@ -9,7 +9,7 @@
         display: block;
         margin-block-end: 1rem;
         font-family: 'NS-Neo', sans-serif;
-        color: rgb(var(--color-text-highlight));
+        color: rgb(var(--clr-text-highlight));
         font-size: var(--font-title-m);
         font-weight: 900;
         content: attr(data-infobox-name);
@@ -28,19 +28,19 @@
     }
 
     &.info {
-        --info-type: var(--color-inter-neutral);
+        --info-type: var(--clr-inter-neutral);
     }
 
     &.safe {
-        --info-type: var(--color-inter-agree);
+        --info-type: var(--clr-inter-agree);
     }
 
     &.warn {
-        --info-type: var(--color-inter-warn);
+        --info-type: var(--clr-inter-warn);
     }
 
     &.alert {
-        --info-type: var(--color-inter-error);
+        --info-type: var(--clr-inter-error);
     }
 }
 

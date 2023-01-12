@@ -350,7 +350,7 @@ video {
 /* _dark.scss */
 @media (prefers-color-scheme: dark) {
   :root {
-    --clr-base: 6, 24, 58;
+    --clr-base: 9, 33, 34;
     --clr-highlight: ;
     --clr-text: 209, 209, 209;
     --clr-text-highlight: 255, 255, 255;
@@ -385,7 +385,7 @@ video {
   -webkit-margin-after: 1rem;
           margin-block-end: 1rem;
   font-family: "NS-Neo", sans-serif;
-  color: rgb(var(--color-text-highlight));
+  color: rgb(var(--clr-text-highlight));
   font-size: var(--font-title-m);
   font-weight: 900;
   content: attr(data-infobox-name);
@@ -401,16 +401,16 @@ video {
   content: "";
 }
 .info-box.info {
-  --info-type: var(--color-inter-neutral);
+  --info-type: var(--clr-inter-neutral);
 }
 .info-box.safe {
-  --info-type: var(--color-inter-agree);
+  --info-type: var(--clr-inter-agree);
 }
 .info-box.warn {
-  --info-type: var(--color-inter-warn);
+  --info-type: var(--clr-inter-warn);
 }
 .info-box.alert {
-  --info-type: var(--color-inter-error);
+  --info-type: var(--clr-inter-error);
 }
 
 /* _infoBox.scss */
