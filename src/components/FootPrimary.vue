@@ -1,7 +1,15 @@
 <template>
+    <div class="py-5">
+        <div class="container mx-auto">
+            어쩌고 저쩌고 하신가요? 이러쿵 저러쿵 해드리겠습니다.
+
+            <button type="button">사업 문의하기</button>
+        </div>
+    </div>
+
     <footer id="footPrimary">
         <div class="container mx-auto">
-            <span class="text-[.6rem] opacity-50">© {{ currentYear }} SoRaang</span>
+            <span class="text-[.6rem] opacity-75">Copyright © {{ currentYear }} 소나무정보기술, All Rights Reserved.</span>
 
             <div class="flex justify-end gap-2 m-5">
                 <div class="color-chip" style="background-color: rgb(var(--clr-id-main))"></div>

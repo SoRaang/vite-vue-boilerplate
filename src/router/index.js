@@ -20,7 +20,17 @@ const routes = [
         path: '/csnotice',
         name: 'Csnotice',
         component: () => import( /* webpackChunkName: 'Portfolio' */ '@/views/CsNotice.vue' )
-    }
+    },
+    {
+        path: '/portfoliodetail',
+        name: 'PortfolioDetail',
+        component: () => import( /* webpackChunkName: 'PortfolioDetail' */ '@/views/PortfolioDetail.vue' )
+    },
+    {
+        path: '/solutiondev',
+        name: 'SolutionDev',
+        component: () => import( /* webpackChunkName: 'SolutionDev' */ '@/views/SolutionDev.vue' )
+    },
 ]
 
 const router = createRouter({
