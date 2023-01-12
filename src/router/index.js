@@ -17,14 +17,14 @@ const routes = [
         component: () => import( /* webpackChunkName: 'Portfolio' */ '@/views/Portfolio.vue' )
     },
     {
-        path: '/csnotice',
-        name: 'Csnotice',
-        component: () => import( /* webpackChunkName: 'Portfolio' */ '@/views/CsNotice.vue' )
-    },
-    {
         path: '/portfoliodetail',
         name: 'PortfolioDetail',
         component: () => import( /* webpackChunkName: 'PortfolioDetail' */ '@/views/PortfolioDetail.vue' )
+    },
+    {
+        path: '/csnotice',
+        name: 'CsNotice',
+        component: () => import( /* webpackChunkName: 'CsNotice' */ '@/views/CsNotice.vue' )
     },
     {
         path: '/solutiondev',
