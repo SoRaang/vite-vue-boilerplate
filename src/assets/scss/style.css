@@ -297,11 +297,11 @@ summary {
   --clr-inter-error: 228, 88, 77;
   --clr-inter-disable: 168, 171, 185;
   --fnt-title-xl: 2rem;
-  --fnt-title-l: 1.6rem;
-  --fnt-title-m: 1rem;
-  --fnt-title-s: .8rem;
-  --fnt-m: .7rem;
-  --fnt-s: .6rem;
+  --fnt-title-lg: 1.6rem;
+  --fnt-title-md: 1rem;
+  --fnt-title-sm: .8rem;
+  --fnt-md: .7rem;
+  --fnt-sm: .6rem;
   --fnt-xs: .5rem;
 }
 
@@ -310,10 +310,26 @@ body {
   background-color: rgb(var(--clr-base));
   font-family: "SUIT", sans-serif;
   color: rgba(var(--clr-text), 0.75);
-  font-size: var(--fnt-m);
+  font-size: var(--fnt-md);
 }
 body.prevent-scroll {
   overflow: hidden;
+}
+
+h2 {
+  font-size: var(--fnt-title-xl);
+}
+
+h3 {
+  font-size: var(--fnt-title-lg);
+}
+
+h4 {
+  font-size: var(--fnt-title-md);
+}
+
+h5 {
+  font-size: var(--fnt-title-sm);
 }
 
 i,

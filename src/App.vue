@@ -1,5 +1,5 @@
 <template>
-    <div id="wrap" class="flex flex-col">
+    <div id="wrap">
         <HeadPrimary />
 
         <main id="contentView">
