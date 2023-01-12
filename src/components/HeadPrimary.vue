@@ -64,10 +64,10 @@
         },
         {
             bindIndex: 3,
-            linkTo: '/details/733',
+            linkTo: '/csnotice',
             navText: '고객센터',
             childrens: [
-                { subTo: '공지사항 001', subName: '공지사항' },
+                { subTo: '공지사항', subName: '공지사항' },
                 { subTo: '자료실 002', subName: '자료실' },
                 { subTo: '소나무 소식 003', subName: '소나무 소식' },
                 { subTo: '사업문의 004', subName: '사업문의' }
