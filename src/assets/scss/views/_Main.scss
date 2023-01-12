@@ -1,0 +1,52 @@
+/* _Main.scss */
+
+/* => 메인 히어로 섹션 */
+
+#mainHero {
+    position: relative;
+    z-index: unset;
+}
+
+.hero-overlay {
+    display: grid;
+    place-items: center;
+    position: absolute;
+    inset: 0;
+    color: white;
+    font-size: 25vw;
+    font-weight: 900;
+    text-align: center;
+    line-height: .8;
+}
+
+.hero-video {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+
+/* <= 메인 히어로 섹션 끝 */
+
+/* => 메인 사업 분야 섹션 */
+
+.portfolio-category {
+    @apply grid grid-cols-2 container mx-auto;
+}
+
+.portfolio-description {
+
+}
+
+.portfolio-picture {
+    position: relative;
+}
+
+[data-pf-category-image] {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+}
+
+/* <= 메인 사업 분야 섹션 끝 */
+
+/* _Main.scss */
