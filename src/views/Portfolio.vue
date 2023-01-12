@@ -1,5 +1,6 @@
 <template>
     <div class="container mt-20 mx-auto">
+        <h1>여기는 포트폴리오 페이지</h1>
         <section id="portfolio-box">
             <div class="portfolio-contents webApp">
                 <h3 class="sub-title">WEB / APP 솔루션</h3>

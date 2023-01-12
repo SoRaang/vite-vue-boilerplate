@@ -51,7 +51,7 @@
             linkTo: '/details/512',
             navText: '사업분야',
             childrens: [
-                { subTo: '솔루션 개발 001', subName: '솔루션 개발' },
+                { subTo: '/solutiondev', subName: '솔루션 개발' },
                 { subTo: '기업 사이트 구축 002', subName: '기업 사이트 구축' },
                 { subTo: '서비스 구축 003', subName: '서비스 구축' },
                 { subTo: '정부사업 004', subName: '정부사업' }
