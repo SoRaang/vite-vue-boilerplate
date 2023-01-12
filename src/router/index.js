@@ -15,17 +15,22 @@ const routes = [
         path: '/portfolio',
         name: 'Portfolio',
         component: () => import( /* webpackChunkName: 'Portfolio' */ '@/views/Portfolio.vue' )
-    }, // Dynamic Route
+    },
+    {
+        path: '/csnotice',
+        name: 'Csnotice',
+        component: () => import( /* webpackChunkName: 'Portfolio' */ '@/views/CsNotice.vue' )
+    },
     {
         path: '/portfoliodetail',
         name: 'PortfolioDetail',
         component: () => import( /* webpackChunkName: 'PortfolioDetail' */ '@/views/PortfolioDetail.vue' )
-    }, // Dynamic Route
+    },
     {
         path: '/solutiondev',
         name: 'SolutionDev',
         component: () => import( /* webpackChunkName: 'SolutionDev' */ '@/views/SolutionDev.vue' )
-    }, // Dynamic Route
+    },
 ]
 
 const router = createRouter({
